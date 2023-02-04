@@ -14,9 +14,9 @@ def main() -> None:
         print('No data')
         return
 
-    # Показываем карту с фиксированным масштабом.
+
     lat, lon = get_coordinates(toponym_to_find)
-    show_map(ll=(lat, lon), spn=(0.005, 0.005), map_type='map')
+
 
     # Показываем карту с масштабом, подобранным по заданному объекту.
     (lat, lon), (dx, dy) = get_coordinates_and_span(toponym_to_find)

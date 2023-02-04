@@ -25,5 +25,9 @@ def main() -> None:
     show_map(ll=(lat, lon), spn=(0.005, 0.005), map_type='map',
              pt=f'{org_lat},{org_lon},pm2dgl~{lat},{lon},pm2rdl')
 
+    # Автопозиционирование
+    show_map(spn=(0.005, 0.005), map_type='map',
+             pt=f'{org_lat},{org_lon},pm2dgl~{lat},{lon},pm2rdl')
+
 
 main()
